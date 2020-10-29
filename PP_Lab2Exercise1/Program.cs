@@ -10,6 +10,13 @@ namespace PP_Lab2Exercise1
     {
         static void Main(string[] args)
         {
+            int n = 11;
+
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine(i + " * " +  n + " = " + i*n);
+            }
+            Console.ReadKey();
         }
     }
 }
