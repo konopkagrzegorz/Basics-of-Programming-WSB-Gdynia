@@ -22,13 +22,19 @@ namespace PP_Lab2Exercise8
 
             Array.Sort(tab);
             Array.Reverse(tab);
-            Console.Write("DESC order sorted table: ");
+            Console.Write("DESC order table: ");
             foreach (int value in tab)
             {
-                Console.Write(value + " ");
+                if (value.Equals(tab[tab.Length - 1]))
+                {
+                    Console.Write(value);
+                }
+                else
+                {
+                    Console.Write(value + " ");
+                }
             }
             Console.ReadKey();
-
         }
     }
 }
