@@ -6,15 +6,20 @@ using System.Threading.Tasks;
 
 namespace PP_Lab2Exercise4
 {
+
+    /*
+    Zadanie jest zrobione z pętlą while, która pozwala na realizacje dowolnej liczby operacji - chciałem przecwiczyć pętle w C#.
+    Jeżeli nie życzy Pan sobie wykonywania zadań, których zakres jest ponad wymagania określone w treści zadania to proszę o informację zwrotną.
+    */
     class Program
     {
         static void Main(string[] args)
         {
-            String sentence = "Co chcesz zrobic?\n" + "D - dodac\n" +
-                                               "O - odjac\n" +
-                                               "M - pomnozyc\n" +
-                                               "Z - podzielic\n" +
-                                               "Q - wyjscie";
+            String sentence = "What you want to do?\n" + "D - Add\n" +
+                                               "O - Substract\n" +
+                                               "M - Multiply\n" +
+                                               "Z - Divide\n" +
+                                               "Q - Quit";
             Boolean value = true;
 
             while (value)
