@@ -11,6 +11,7 @@ namespace PP_Lab2Exercise4
     Zadanie jest zrobione z pętlą while, która pozwala na realizacje dowolnej liczby operacji - chciałem przecwiczyć pętle w C#.
     Jeżeli nie życzy Pan sobie wykonywania zadań, których zakres jest ponad wymagania określone w treści zadania to proszę o informację zwrotną.
     */
+
     class Program
     {
         static void Main(string[] args)
