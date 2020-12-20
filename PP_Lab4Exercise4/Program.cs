@@ -9,7 +9,7 @@ namespace PP_Lab4Exercise4
 
         static void Dodaj()
         {
-            Console.WriteLine("Co chcesz dodac? ");
+            Console.Write("Co chcesz dodac?: ");
             string odp = Console.ReadLine().Trim().ToLower();
             if (!zakupy.Contains(odp))
             {
@@ -22,7 +22,7 @@ namespace PP_Lab4Exercise4
         }
         static void Skresl()
         {
-            Console.WriteLine("Co chcesz usunac? ");
+            Console.Write("Co chcesz usunac?: ");
             string odp = Console.ReadLine().Trim().ToLower();
             if (zakupy.Contains(odp))
             {
@@ -30,6 +30,20 @@ namespace PP_Lab4Exercise4
             } else
             {
                 Console.WriteLine("Element nie istnieje");
+            }
+        }
+
+        static void Wyszukaj()
+        {
+            Console.Write("Jaki element wyszukac?: ");
+            string odp = Console.ReadLine().Trim().ToLower();
+
+            if (zakupy.Contains(odp))
+            {
+                Console.WriteLine("Tak, taki element znajduje sie na liscie na pozycji: " + (zakupy.IndexOf(odp) + 1));
+            } else
+            {
+                Console.WriteLine("Szukany element nie istnieje");
             }
         }
         static void WypiszZakupy()
@@ -54,6 +68,7 @@ namespace PP_Lab4Exercise4
                 WypiszZakupy();
                 Console.WriteLine("d - dodanie nowego elementu do listy");
                 Console.WriteLine("s - skreślenie elementu z listy");
+                Console.WriteLine("w - wyszukaj");
                 Console.WriteLine("k - koniec działania programu");
                 Console.Write("Co chcesz zrobić? ");
                 odp = Console.ReadLine().ToLower();
@@ -64,6 +79,9 @@ namespace PP_Lab4Exercise4
                         break;
                     case "s":
                         Skresl();
+                        break;
+                    case "w":
+                        Wyszukaj();
                         break;
                     case "k":
                         Console.WriteLine("Do widzenia!");
